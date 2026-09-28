@@ -1,6 +1,9 @@
 import vinext from "vinext";
 import { defineConfig } from "vite";
 
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "zivra";
+
 // Voeg database- of opslagbindings pas toe wanneer het dashboard die werkelijk gebruikt.
 const localBindingConfig = {
   main: "./worker/index.ts",
@@ -20,6 +23,7 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
+    base: isGitHubPages ? `/${repositoryName}/` : "/",
     plugins: [
       vinext(),
       cloudflare({
