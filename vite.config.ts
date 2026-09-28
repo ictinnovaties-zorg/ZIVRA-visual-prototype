@@ -2,7 +2,7 @@ import vinext from "vinext";
 import { defineConfig } from "vite";
 
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "zivra";
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "ZIVRA-visual-prototype";
 
 // Voeg database- of opslagbindings pas toe wanneer het dashboard die werkelijk gebruikt.
 const localBindingConfig = {

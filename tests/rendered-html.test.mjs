@@ -23,13 +23,13 @@ async function render() {
   );
 }
 
-test("server-renders the Zivra patient overview", async () => {
+test("server-renders the ZIVRA patient overview", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Zivra \| Maandelijkse voortgang<\/title>/);
+  assert.match(html, /<title>ZIVRA \| Maandelijkse voortgang<\/title>/);
   assert.match(html, /Patiënten/);
   assert.match(html, /Aandacht nodig/);
   assert.match(html, /Saskia Groen/);
@@ -51,7 +51,7 @@ test("removes the disposable starter preview", async () => {
   assert.doesNotMatch(page, /Bekijk videobeelden in 3D/);
   assert.doesNotMatch(page, /Bekijk in video\/model|measurement-timeline/);
   assert.match(layout, /lang="nl"/);
-  assert.match(layout, /Zivra \| Maandelijkse voortgang/);
+  assert.match(layout, /ZIVRA \| Maandelijkse voortgang/);
   assert.doesNotMatch(styles, /text-transform:\s*uppercase/);
   assert.match(styles, /--heading-text:\s*#202637/);
   assert.match(styles, /--body-text:\s*#667085/);

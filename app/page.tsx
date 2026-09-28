@@ -516,7 +516,7 @@ function Sidebar({ onHome }: { onHome: () => void }) {
   return (
     <aside className="sidebar">
       <button className="brand" onClick={onHome} aria-label="Ga naar patiëntenoverzicht">
-        <span>Zivra</span>
+        <span>ZIVRA</span>
         <i aria-hidden="true"><b /><b /><b /></i>
       </button>
 

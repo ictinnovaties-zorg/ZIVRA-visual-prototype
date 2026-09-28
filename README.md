@@ -1,6 +1,6 @@
-# Zivra dashboardprototype
+# ZIVRA dashboardprototype
 
-Zivra is een klikbaar dashboardprototype voor het bekijken van trainingsresultaten van CVA-patiënten. Het dashboard bevat een patiëntenoverzicht, patiëntdetails, sessiegrafieken en een gesynchroniseerde weergave van camera-, model- en VR-video.
+ZIVRA is een klikbaar dashboardprototype voor het bekijken van trainingsresultaten van CVA-patiënten. Het dashboard bevat een patiëntenoverzicht, patiëntdetails, sessiegrafieken en een gesynchroniseerde weergave van camera-, model- en VR-video.
 
 ## Projectstructuur
 
@@ -37,7 +37,7 @@ Deze mappen hoef je normaal gesproken niet handmatig aan te passen:
 | `app/page.tsx` | Hoofdbestand van het dashboard met patiëntdata, sessiedata, grafieken, navigatie en videosynchronisatie. |
 | `app/globals.css` | Alle kleuren, lettertypen, afmetingen, layouts, grafieken, tooltips en responsive stijlen. |
 | `app/layout.tsx` | Algemene HTML-opbouw en metadata, waaronder de paginatitel en het favicon. |
-| `public/favicon.svg` | Het paarse Zivra-favicon met de letter Z. |
+| `public/favicon.svg` | Het paarse ZIVRA-favicon met de letter Z. |
 | `public/videos/demo-2-camera.mp4` | Normaal camerabeeld van de training. |
 | `public/videos/demo-2-model.mp4` | Animatie van het gemeten bewegingsmodel. |
 | `public/videos/demo-2-vr.mp4` | Opname van de VR-omgeving. |
@@ -105,7 +105,7 @@ Dit project wordt rechtstreeks vanuit `main` gebouwd en gepubliceerd door GitHub
 3. Kies onder **Build and deployment** bij **Source** voor **GitHub Actions**.
 4. Controleer of de branch `main` de volgende bestanden bevat:
    - `.github/workflows/deploy-pages.yml` voor het bouwen en publiceren;
-   - `next.config.ts` met de instellingen voor een statische export en het pad `/zivra`.
+   - `next.config.ts` met de instellingen voor een statische export en het repositorypad `/ZIVRA-visual-prototype`.
 5. Laat de workflow een eerste keer uitvoeren door naar `main` te pushen of start hem handmatig via **Actions**.
 
 Meer uitleg staat in de officiële GitHub-documentatie over [het instellen van een publicatiebron](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) en [het publiceren met een aangepaste workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
@@ -129,12 +129,12 @@ Meer uitleg staat in de officiële GitHub-documentatie over [het instellen van e
    git push origin main
    ```
 
-3. De push naar `main` start automatisch de workflow **Publiceer Zivra op GitHub Pages**. Open het tabblad **Actions** om de voortgang te volgen. De publicatie is gereed zodra de workflow groen is.
-4. Open daarna [https://lckssng.github.io/zivra/](https://lckssng.github.io/zivra/). Het kan na een geslaagde workflow nog kort duren voordat de nieuwste versie zichtbaar is.
+3. De push naar `main` start automatisch de workflow **Publiceer ZIVRA op GitHub Pages**. Open het tabblad **Actions** om de voortgang te volgen. De publicatie is gereed zodra de workflow groen is.
+4. Open daarna [https://lckssng.github.io/ZIVRA-visual-prototype/](https://lckssng.github.io/ZIVRA-visual-prototype/). Het kan na een geslaagde workflow nog kort duren voordat de nieuwste versie zichtbaar is.
 
 ### Workflow handmatig starten
 
-Open **Actions**, kies **Publiceer Zivra op GitHub Pages**, klik op **Run workflow**, selecteer de branch `main` en bevestig met **Run workflow**.
+Open **Actions**, kies **Publiceer ZIVRA op GitHub Pages**, klik op **Run workflow**, selecteer de branch `main` en bevestig met **Run workflow**.
 
 ### Problemen oplossen
 

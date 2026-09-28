@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "zivra";
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "ZIVRA-visual-prototype";
 const pagesPath = isGitHubPages ? `/${repositoryName}` : "";
 
 const nextConfig: NextConfig = {

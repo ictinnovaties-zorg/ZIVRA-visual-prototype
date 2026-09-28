@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "zivra";
+const repositoryName = process.env.GITHUB_REPOSITORY?.split("/").at(-1) ?? "ZIVRA-visual-prototype";
 const publicPath = isGitHubPages ? `/${repositoryName}` : "";
 
 const geistSans = Geist({
@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zivra | Maandelijkse voortgang",
+  title: "ZIVRA | Maandelijkse voortgang",
   description: "Een eenvoudig patiëntenoverzicht voor CVA-revalidatie.",
   icons: {
     icon: `${publicPath}/favicon.svg`,
