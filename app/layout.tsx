@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ZIVRA | Maandelijkse voortgang",
+  title: "ZIVRA | Visueel prototype",
   description: "Een eenvoudig patiëntenoverzicht voor CVA-revalidatie.",
   icons: {
     icon: `${publicPath}/favicon.svg`,
